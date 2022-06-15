@@ -1,0 +1,525 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  
+        <title>EducationApp</title>
+  
+        <meta name="description" content="EducationApp created by Ahmed Yasser">
+        <meta name="author" content="Ahmed Yasser">
+        <meta name="robots" content="noindex, nofollow">
+  
+        <!-- Open Graph Meta -->
+        <meta property="og:title" content="EducationApp">
+        <meta property="og:site_name" content="EducationApp">
+        <meta property="og:description" content="EducationApp created by Ahmed Yasser">
+        <meta property="og:type" content="website">
+        <meta property="og:url" content="">
+        <meta property="og:image" content="">
+
+        <!-- Icons -->
+        <!-- The following icons can be replaced with your own, they are used by desktop and mobile browsers -->
+        <link rel="shortcut icon" href="../../assets/media/favicons/favicon.png">
+        <link rel="icon" type="image/png" sizes="192x192" href="../../assets/media/favicons/favicon-192x192.png">
+        <link rel="apple-touch-icon" sizes="180x180" href="../../assets/media/favicons/apple-touch-icon-180x180.png">
+        <!-- END Icons -->
+
+        <!-- Stylesheets -->
+        <!-- Fonts and Dashmix framework -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+        <link rel="stylesheet" id="css-main" href="../../assets/css/dashmix.min.css">
+
+        <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
+        <!-- <link rel="stylesheet" id="css-theme" href="../../assets/css/themes/xwork.min.css"> -->
+        <!-- END Stylesheets -->
+    </head>
+    <body>
+        <div id="page-container" class="sidebar-dark side-scroll page-header-fixed page-header-glass main-content-boxed">
+            <nav id="sidebar" aria-label="Main Navigation">
+                <!-- Side Header -->
+                <div class="bg-header-dark">
+                    <div class="content-header bg-white-10">
+                        <!-- Logo -->
+                        <a class="font-w600 text-white tracking-wide" href="../../index.html">
+                            <span class="smini-visible">
+                                E<span class="opacity-75">A</span>
+                            </span>
+                            <span class="smini-hidden">
+                                Education<span class="opacity-75">App</span>
+                            </span>
+                        </a>
+                        <!-- END Logo -->
+
+                        <!-- Options -->
+                        <div>
+                            <a class="js-class-toggle text-white-75" data-target="#sidebar-style-toggler" data-class="fa-toggle-off fa-toggle-on" data-toggle="layout" data-action="sidebar_style_toggle" href="javascript:void(0)">
+                                <i class="fa fa-toggle-off" id="sidebar-style-toggler"></i>
+                            </a>
+                            <!-- END Toggle Sidebar Style -->
+
+                            <!-- Close Sidebar, Visible only on mobile screens -->
+                            <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                            <a class="d-lg-none text-white ml-2" data-toggle="layout" data-action="sidebar_close" href="javascript:void(0)">
+                                <i class="fa fa-times-circle"></i>
+                            </a>
+                            <!-- END Close Sidebar -->
+                        </div>
+                        <!-- END Options -->
+                    </div>
+                </div>
+                <!-- END Side Header -->
+
+                <!-- Sidebar Scrolling -->
+                <div class="js-sidebar-scroll">
+                    <!-- Side Navigation -->
+                    <div class="content-side">
+                        <select class="form-control bg-primary border-0 text-white my-2" id="example-select" name="example-select" onchange="changeLayout()">
+                            <option value="1" selected>En</option>
+                            <option value="2">Ar</option>
+                        </select>
+                        <ul class="nav-main">
+                            <li class="nav-main-item">
+                                <a class="nav-main-link active" href="../../index.html">
+                                    <i class="nav-main-link-icon fa fa-home"></i>
+                                    <span class="nav-main-link-name">Home</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="javascript:void(0)">
+                                    <i class="nav-main-link-icon fa fa-rocket"></i>
+                                    <span class="nav-main-link-name">Features</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="javascript:void(0)">
+                                    <i class="nav-main-link-icon fab fa-paypal"></i>
+                                    <span class="nav-main-link-name">Pricing</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                                <a class="nav-main-link" href="../contact-us.html">
+                                    <i class="nav-main-link-icon fa fa-envelope"></i>
+                                    <span class="nav-main-link-name">Contact</span>
+                                </a>
+                            </li>
+                            <li class="nav-main-item">
+                              <a class="nav-main-link" href="../profile/profile.html">
+                                  <i class="nav-main-link-icon far fa-user-circle"></i>
+                                  <span class="nav-main-link-name">Profile</span>
+                              </a>
+                          </li>
+                        
+                        </ul>
+                    </div>
+                    <!-- END Side Navigation -->
+                </div>
+                <!-- END Sidebar Scrolling -->
+            </nav>
+            <!-- END Sidebar -->
+
+            <!-- Header -->
+            <header id="page-header">
+                <!-- Header Content -->
+                <div class="content-header">
+                    <!-- Left Section -->
+                    <div class="d-flex align-items-center">
+                        <!-- Logo -->
+                        <a class="link-fx font-size-lg font-w600 text-dark" href="../../index.html">
+                            <span style="color: #6c6c6c;">Education</span><span class="text-primary">App</span>
+                        </a>
+                        <!-- END Logo -->
+                    </div>
+                    <!-- END Left Section -->
+
+                    <!-- Right Section -->
+                    <div class="d-flex align-items-center">
+                        <!-- Menu -->
+                        <div class="d-none d-lg-block">
+                            <ul class="nav-main nav-main-horizontal nav-main-hover">
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link active" href="../../index.html">
+                                        <i class="nav-main-link-icon fa fa-home"></i>
+                                        <span class="nav-main-link-name">Home</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="javascript:void(0)">
+                                        <i class="nav-main-link-icon fa fa-rocket"></i>
+                                        <span class="nav-main-link-name">Features</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="javascript:void(0)">
+                                        <i class="nav-main-link-icon fab fa-paypal"></i>
+                                        <span class="nav-main-link-name">Pricing</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                    <a class="nav-main-link" href="../contact-us.html">
+                                        <i class="nav-main-link-icon fa fa-envelope"></i>
+                                        <span class="nav-main-link-name">Contact</span>
+                                    </a>
+                                </li>
+                                <li class="nav-main-item">
+                                  <a class="nav-main-link" href="../profile/profile.html">
+                                      <i class="nav-main-link-icon far fa-user-circle"></i>
+                                      <span class="nav-main-link-name">Profile</span>
+                                  </a>
+                              </li>
+                              <li class="nav-main-item">
+                                <select class="form-control bg-primary border-0 text-white mx-2" id="language-select" name="example-select" onchange="changeLayout()">
+                                    <option value="1" selected>En</option>
+                                    <option value="2">Ar</option>
+                                </select>
+                                </li>
+                            </ul>
+                        </div>
+                        <!-- END Menu -->
+
+                        <!-- Toggle Sidebar -->
+                        <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                        <button type="button" class="btn btn-dual d-lg-none ml-1" data-toggle="layout" data-action="sidebar_toggle">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+                        <!-- END Toggle Sidebar -->
+                    </div>
+                    <!-- END Right Section -->
+                </div>
+                <!-- END Header Content -->
+
+                <!-- Header Search -->
+                <div id="page-header-search" class="overlay-header bg-primary">
+                    <div class="content-header">
+                        <form class="w-100" method="POST">
+                            <div class="input-group">
+                                <div class="input-group-prepend">
+                                    <!-- Layout API, functionality initialized in Template._uiApiLayout() -->
+                                    <button type="button" class="btn btn-primary" data-toggle="layout" data-action="header_search_off">
+                                        <i class="fa fa-fw fa-times-circle"></i>
+                                    </button>
+                                </div>
+                                <input type="text" class="form-control border-0" placeholder="Search or hit ESC.." id="page-header-search-input" name="page-header-search-input">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <!-- END Header Search -->
+
+                <!-- Header Loader -->
+                <!-- Please check out the Loaders page under Components category to see examples of showing/hiding it -->
+                <div id="page-header-loader" class="overlay-header bg-primary-darker">
+                    <div class="content-header">
+                        <div class="w-100 text-center">
+                            <i class="fa fa-fw fa-2x fa-sun fa-spin text-white"></i>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Header Loader -->
+            </header>
+            <!-- END Header -->
+             <!-- Main Container -->
+             <main id="main-container">
+                <!-- Hero -->
+                <div class="bg-dark">
+                    <div class="bg-black-25">
+                        <div class="content content-full content-top">
+                            <div class="py-4 text-center">
+                                <h1 class="font-w700 text-white mb-2">
+                                    Workshops
+                                </h1>
+                                <h2 class="h3 font-w400 text-white-75">
+                                    Education matters, never stop learning new skills
+                                </h2>
+                                <a class="btn btn-hero-primary" href="javascript:void(0)" data-toggle="click-ripple">
+                                    Subscribe from $10
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Hero -->
+
+                <!-- Page Content -->
+                <div class="content content-boxed">
+                    <div class="row row-deck">
+                        <div class="col-md-6">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-image" style="background-image: url('../../assets/media/photos/photo24.jpg');" href="workshop-data.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-black-50">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        JavaScript
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Learn Vue 2: Step By Step</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        35 Lessons | Beginner
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-6">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-image" style="background-image: url('../../assets/media/photos/photo22.jpg');" href="workshop-data.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-xsmooth-op">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        CSS
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Modern CSS for Developers</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        10 Lessons | Beginner
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-xmodern" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        Business
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Social Marketing</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        15 Lessons | Beginner
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-xwork" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        Coding
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">C# Essentials</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        22 Lessons | Hard
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-xeco" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        Design
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Sketch From Scratch</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        42 Lessons | Beginner
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-black-75" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-danger">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        PHP
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Laravel 5.6 From Scratch</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        60 Lessons | Intermediate
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-black-75" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-gd-lake-op">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        Coding
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Building a PWA</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        35 Lessons | Hard
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-4">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-black-75" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-gd-sublime-op">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        HTML
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">HTML5 Bible</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        25 Lessons | Beginner
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="col-md-8">
+                            <a class="block block-rounded block-transparent d-md-flex align-items-md-stretch bg-black-75" href="workshop.html" data-toggle="click-ripple">
+                                <div class="block-content block-content-full bg-gd-fruit-op">
+                                    <span class="d-inline-block py-1 px-2 rounded bg-black-75 font-size-sm font-w700 text-uppercase text-white">
+                                        Coding
+                                    </span>
+                                    <div class="py-6">
+                                        <div class="font-size-sm mb-2">
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                            <i class="fa fa-star text-warning"></i>
+                                        </div>
+                                        <h3 class="font-w700 text-white mb-1">Learning Java 8</h3>
+                                    </div>
+                                    <span class="font-size-sm font-w700 text-uppercase text-white-75">
+                                        50 Lessons | Intermediate
+                                    </span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Page Content -->
+
+                <!-- Call to Action -->
+                <div class="bg-body-dark">
+                    <div class="content content-full text-center">
+                        <div class="py-4">
+                            <h3 class="mb-2 text-center">
+                                Why Join Us?
+                            </h3>
+                            <h4 class="font-w400 text-muted text-center">
+                                We have the most complete and highest quality courses in the world!
+                            </h4>
+                            <a class="btn btn-hero-primary" href="javascript:void(0)" data-toggle="click-ripple">
+                                Subscribe Today
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <!-- END Call to Action -->
+            </main>
+            <!-- END Main Container -->
+
+
+             <!-- Footer -->
+            <footer id="page-footer" class="footer-static bg-white">
+                <div class="content py-4 border-top">
+                    <!-- Footer Copyright -->
+                    <div class="row font-size-sm pt-4">
+                        <div class="col-sm-6 order-sm-2 mb-1 mb-sm-0 text-center text-sm-right">
+                            Crafted with <i class="fa fa-heart text-danger"></i> by <a class="font-w600" href="https://1.envato.market/ydb" target="_blank">Ahmed Yasser</a>
+                        </div>
+                        <div class="col-sm-6 order-sm-1 text-center text-sm-left">
+                          <a class="link-fx font-size-lg font-w600 text-dark" href="">
+                            Education<span class="text-primary">App</span>
+                        </a> &copy; <span data-toggle="year-copy"></span>
+                        </div>
+                    </div>
+                    <!-- END Footer Copyright -->
+                </div>
+            </footer>
+            <!-- END Footer -->
+       
+        <!-- END Page Container -->
+
+   
+
+        <!--
+            Dashmix JS Core
+
+            Vital libraries and plugins used in all pages. You can choose to not include this file if you would like
+            to handle those dependencies through webpack. Please check out ../../assets/_js/main/bootstrap.js for more info.
+
+            If you like, you could also include them separately directly from the ../../assets/js/core folder in the following
+            order. That can come in handy if you would like to include a few of them (eg jQuery) from a CDN.
+
+            ../../assets/js/core/jquery.min.js
+            ../../assets/js/core/bootstrap.bundle.min.js
+            ../../assets/js/core/simplebar.min.js
+            ../../assets/js/core/jquery-scrollLock.min.js
+            ../../assets/js/core/jquery.appear.min.js
+            ../../assets/js/core/js.cookie.min.js
+        -->
+        <script src="../../assets/js/dashmix.core.min.js"></script>
+
+        <!--
+            Dashmix JS
+
+            Custom functionality including Blocks/Layout API as well as other vital and optional helpers
+            webpack is putting everything together at ../../assets/_js/main/app.js
+        -->
+        <script src="../../assets/js/dashmix.app.min.js"></script>
+    </body>
+</html>
+<script>
+    function changeLayout() {
+        debugger
+        let container = document.querySelector('#page-container');
+        document.getElementById("language-select").value === "2" ?  container.classList.add("rtl-support") :  container.classList.remove("rtl-support")
+    }
+</script>
